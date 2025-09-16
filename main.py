@@ -109,7 +109,7 @@ def main():
 
     
     # Uncomment the line below to run exercise 1
-    #plot_ex1(strip_1p31, strip_1p55, config)
+    plot_ex1(strip_1p31, strip_1p55, config)
 
     # |------------|
     # | Exercise 2 |
@@ -128,7 +128,7 @@ def main():
     )
 
     # Uncomment the line below to run exercise 2
-    #n_on_te, hfss_n_eff_0, hfss_n_eff_1, lambdas, hfss_x = plot_ex2(strip_neff, config)
+    n_on_te, hfss_n_eff_0, hfss_n_eff_1, lambdas, hfss_x = plot_ex2(strip_neff, config)
 
     # |------------|
     # | Exercise 3 |
@@ -136,7 +136,7 @@ def main():
     # To run exercise 3 you need to run exercise 2 to get the necessary outputs
 
     # Uncomment the line below to run exercise 3
-    #plot_ex3(strip_neff, config, n_on_te, lambdas, hfss_n_eff_0, hfss_x, hfss_n_eff_1)
+    plot_ex3(strip_neff, config, n_on_te, lambdas, hfss_n_eff_0, hfss_x, hfss_n_eff_1)
 
     # |------------|
     # | Exercise 4 |
@@ -303,4 +303,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
