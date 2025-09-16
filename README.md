@@ -3,7 +3,7 @@
 This repository includes the python files that were used to produce the results of the project.
 For this project HFSS, Tidy3D and the online simulator were used to create the results.
 
-Explanation of the directories, files and code used below:
+Explanation of the directories, files and code listed below:
 File or directory name | Description
 --- | ---
 main.py | The main directory containing the implementation of the exercises in python.
