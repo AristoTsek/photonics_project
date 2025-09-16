@@ -1,7 +1,7 @@
 # Photonics Project
 
 This repository includes the python files that were used to produce the results of the project.
-For this project HFSS, Tidy3D and the online simulator were used to create the results.
+For this project HFSS, Tidy3D and the online simulator were used to simulate a silicon waveguide of dimensions wxh = 400 nm x 300 nm. The structure consists of a silicon dioxide substrate and air used for cladding.
 
 Explanation of the directories, files and code listed below:
 File or directory name | Description
