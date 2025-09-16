@@ -26,7 +26,7 @@ def get_config():
         "min_val_x": -1, #um
         "max_val_x": 1, #um
         "c0": 299.792458, #um/ps
-        "verbose": True, # Controls the verbocity of the code
+        "verbose": True, # Controls the verbosity of the code
         "plot_live": True, # Plot during runtime or save the figures
     }
 
@@ -579,5 +579,6 @@ def plot_ex3(strip_neff, config, n_on_te, lambdas, hfss_n_eff_0, hfss_x, hfss_n_
         plt.show()
     else:
         plt.savefig("./ng_mode1.png", format="png")
+
 
 
