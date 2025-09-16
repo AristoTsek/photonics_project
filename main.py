@@ -252,7 +252,10 @@ def main():
     plt.ylabel("A$_e$$_f$$_f$ [μm$^2$]", fontsize=config["font"])
     plt.grid(True)
     plt.legend(fontsize=config["font"])
-    plt.show()
+    if config["plot_live"]:
+        plt.show()
+    else:
+        plt.savefig("./Aeff_mode0.png", format="png")
 
     ############## TM Calculations ################
     power_of_two_hfss = []
@@ -299,9 +302,13 @@ def main():
     plt.ylabel("A$_e$$_f$$_f$ [μm$^2$]", fontsize=config["font"])
     plt.grid(True)
     plt.legend(fontsize=config["font"])
-    plt.show()
-
+    if config["plot_live"]:
+        plt.show()
+    else:
+        plt.savefig("./Aeff_mode1.png", format="png")
+        
 if __name__ == "__main__":
     main()
+
 
 
