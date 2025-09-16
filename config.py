@@ -513,7 +513,10 @@ def plot_ex2(strip_neff, config):
     plt.title("Mode 0")
     plt.legend()
     plt.grid(True)
-    plt.show()
+    if config["plot_live"]:
+        plt.show()
+    else:
+        plt.savefig("./neff_mode0.png", format="png")
 
     n_eff_mode1 = n_eff[:, 1]
     lambdas_tidy3d = config["c0"] / (np.asarray(n_eff_mode1['f']) * 1e-15)
@@ -528,7 +531,10 @@ def plot_ex2(strip_neff, config):
     plt.title("Mode 1")
     plt.legend()
     plt.grid(True)
-    plt.show()
+    if config["plot_live"]:
+        plt.show()
+    else:
+        plt.savefig("./neff_mode1.png", format="png")
 
     return n_on_te, hfss_n_eff_0, hfss_n_eff_1, lambdas, hfss_x
 
@@ -552,7 +558,10 @@ def plot_ex3(strip_neff, config, n_on_te, lambdas, hfss_n_eff_0, hfss_x, hfss_n_
     plt.title("Mode 0")
     plt.legend()
     plt.grid(True)
-    plt.show()
+    if config["plot_live"]:
+        plt.show()
+    else:
+        plt.savefig("./ng_mode0.png", format="png")
 
     ng_mode1 = ng_tidy3d[:, 1]
     lambdas_tidy3d = config["c0"] / (np.asarray(ng_mode1['f']) * 1e-15)
@@ -566,4 +575,8 @@ def plot_ex3(strip_neff, config, n_on_te, lambdas, hfss_n_eff_0, hfss_x, hfss_n_
     plt.title("Mode 1")
     plt.legend()
     plt.grid(True)
-    plt.show()
+    if config["plot_live"]:
+        plt.show()
+    else:
+        plt.savefig("./ng_mode1.png", format="png")
+
