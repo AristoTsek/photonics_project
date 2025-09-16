@@ -1,4 +1,4 @@
-**Photonics Project**
+# Photonics Project
 
 This repository includes the python files that were used to produce the results of the project.
 For this project HFSS, Tidy3D and the online simulator were used to create the results.
