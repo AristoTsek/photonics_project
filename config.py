@@ -20,14 +20,14 @@ def get_config():
         "wavelength_no2": 1.55, #um
         "waveguide_width": 0.4, #um
         "waveguide_height": 0.3, #um
-        "font": 20,
+        "font": 20, # Fontsize of the titles/axis-names etc in plots
         "min_val_y": -0.6, #um
         "max_val_y": 0.88, #um
         "min_val_x": -1, #um
         "max_val_x": 1, #um
         "c0": 299.792458, #um/ps
-        "verbose": True,
-        "plot_live": True,
+        "verbose": True, # Controls the verbocity of the code
+        "plot_live": True, # Plot during runtime or save the figures
     }
 
 
@@ -579,4 +579,5 @@ def plot_ex3(strip_neff, config, n_on_te, lambdas, hfss_n_eff_0, hfss_x, hfss_n_
         plt.show()
     else:
         plt.savefig("./ng_mode1.png", format="png")
+
 
